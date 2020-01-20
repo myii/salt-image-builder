@@ -23,8 +23,6 @@ env:
   # EP: extra packages required for the specific build
   jobs:
     # # AMAZONLINUX
-    # # AmazonLinux packages are py2, even if the installer says
-    # # it's using python3. Dependencies are hardcoded to py2
     - DN=amazonlinux DV=2 PI=yum SV=master SIM=git PV=3 EP="yum-utils python3-pip procps-ng"
     - DN=amazonlinux DV=2 PI=yum SV=v3000.0rc2 SIM=git PV=3 EP="yum-utils python3-pip procps-ng"
     - DN=amazonlinux DV=2 PI=yum SV=2019.2 SIM=stable PV=3 EP="yum-utils python3-pip procps-ng"
