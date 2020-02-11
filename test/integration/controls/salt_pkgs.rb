@@ -1,4 +1,10 @@
-salt_version = input('salt_version') == 'master' ? '3000' : input('salt_version')
+salt_version = 
+  case input('salt_version')
+  when 'master', 'latest'
+    '3000'
+  else
+    input('salt_version')
+  end
 python_version = input('py_version') == '3' ? '3' : '2'
 
 control 'salt call' do
