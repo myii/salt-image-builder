@@ -65,6 +65,7 @@ env:
     - DN=opensuse/leap  DV=15.1   PI=zyp SIM=git    SV=2019.2 PV=3 EP="python3-pip"
 
     # UBUNTU
+    - DN=ubuntu         DV=20.04  PI=apt SIM=git    SV=master PV=3 EP="python3-apt python3-pip"
     - DN=ubuntu         DV=18.04  PI=apt SIM=git    SV=master PV=3 EP="python3-apt python3-pip"
     - DN=ubuntu         DV=18.04  PI=apt SIM=stable SV=3000.3 PV=3 EP="python3-pip"
     - DN=ubuntu         DV=18.04  PI=apt SIM=stable SV=3000.3 PV=2 EP="python-pip"
